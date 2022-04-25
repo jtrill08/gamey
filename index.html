@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why are you running?</title>
+  <link rel="icon" type="image/x-icon" href="/imgs/dino-stationary.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" type="module"></script>
+  <script type="text/javascript">
+      if (screen.width <= 830) {
+      document.location = "mobile.html";
+      }
+      </script>
+</head>
+<body>
+  <div class="world" data-world>
+    <div class="score-name">score</div>
+    <div class="score" data-score>0</div>
+    <div class="highscore" data-highscore>0</div>
+    <div class="end-screen" data-end-screen></div>
+    <img src="imgs/ground.png" class="ground" data-ground>
+    <img src="imgs/ground.png" class="ground" data-ground>
+    <img src="imgs/dino-stationary.png" class="dino" data-dino>
+  </div>
+  <div class="info">
+    <h1 class ="start-screen"data-start-screen>WHY ARE YOU RUNNING</h1>
+    <h2 class = "start1-screen"data-start-screen2>Press the spacebar to start playing</h2>
+  </div>
+    <div class="footer">
+      <p>Footer</p>
+      <a href="https://twitter.com/intent/tweet?text=Hello%20world"><img src="/imgs/twitter.png" class="twitter-share-button" alt="share on twitter" style="width:42px;height:42px;"></a>
+      <a href="https://twitter.com/intent/tweet?text=Hello%20world"><img src="/imgs/chrome.png" class="chrome-share-button" alt="download chrome extension" style="width:42px;height:42px;"></a>
+      <p><a href="formspree">Suggest a feature</a></p>
+      <p><a href="nobadideashere-gmail -make email">Send email</a></p>
+    </div>
+    <script>
+      var i = 0;
+      function change() {
+        var doc = document.getElementById("background");
+        var color = ["/c3e6fb", "/antiquewhite//",];
+        document.body.style.backgroundColor = color[i];
+        i = (i + 1) % color.length;
+      }
+      setInterval(change, 10000);
+      </script>
+</body>
+
+</a>
+</html>

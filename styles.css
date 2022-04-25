@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  display: block;
+  position: relative;
+  font-family: 'Press Start 2P', cursive;
+  background-color: gray;
+
+}
+
+.world {
+  overflow: hidden;
+  position: relative;
+  top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  width:  90vh;
+  height: 24vh;
+}
+
+.info{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  width: 100%;
+  bottom: 10%;
+  padding: 10px;
+  text-align: center;
+}
+
+.start-screen{
+  font-size: 1.5vh;
+}
+
+.start1-screen{
+  font-size: 2vh;
+  color: white;
+  animation: opacity 2.5s ease-in-out infinite;
+    opacity: 1;
+}
+
+.end-screen{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  color: #e94e1b;
+  margin-bottom: 15vh;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.score {
+  position: absolute;
+  font-size: 2vmin;
+  color: #e94e1b;
+  right: 1vmin;
+  margin-left: 2vh;
+}
+
+
+.highscore {
+  position: absolute;
+  font-size: 2vmin;
+  color: #ff8725;
+  right: 15vmin;
+  margin-left: 2vh;
+}
+
+.score-name {
+  position: absolute;
+  font-size: 2vmin;
+  color: #e94e1b;
+  right: 25vmin;
+
+  margin-left: 2vh;
+}
+
+.hide {
+  display: none;
+}
+
+.ground {
+  --left: 0;
+  position: absolute;
+  width: 300%;
+  bottom: 0;
+  left: calc(var(--left) * 1%)
+}
+
+.palm {
+  position: absolute;
+  left: calc(var(--left) * 1%);
+  height: 7vh;
+  bottom: 1.5vh;
+}
+
+.palmBig{
+  position: absolute;
+  left: calc(var(--left) * 1%);
+  height: 10vh;
+  bottom: 1.5vh;
+
+}
+
+.cloud {
+  --left: 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: calc(var(--left) * 1%)
+}
+
+
+.cloud2 {
+  --left:0;
+  position: absolute;
+  width: 4vw;
+  top: 0vh;
+  left: calc(var(--left) * 1%);
+  
+}
+
+.dino {
+  --bottom: 0;
+  position: absolute;
+  left: 10%;
+  height: 29%;
+  bottom: calc(var(--bottom) * 1%);
+}
+.car {
+  position: absolute;
+  left: calc(var(--left) * 1%);
+  height: 11%;
+  bottom: 0.4vh;
+}
+
+.cactus {
+  position: absolute;
+  left: calc(var(--left) * 4%);
+  height: 10vh;
+  bottom: 0.1vh;
+}
+
+.footer {
+  position: fixed;
+  display: inline-block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  text-align: center;
+}
