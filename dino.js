@@ -22,9 +22,7 @@ export function setupDino() {
   currentFrameTime = 0
   yVelocity = 0
   setCustomProperty(dinoElem, "--bottom", 0)
-    document.removeEventListener("keydown", onJump)
-    document.removeEventListener("click", mobJump)
-    btnJump.addEventListener("keydown", onJump)
+    btnJump.removeEventListener("click", mobJump)
     btnJump.addEventListener("click", mobJump)
 }
 
