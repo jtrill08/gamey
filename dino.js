@@ -22,8 +22,8 @@ export function setupDino() {
   currentFrameTime = 0
   yVelocity = 0
   setCustomProperty(dinoElem, "--bottom", 0)
-  document.removeEventListener("click", mobJump)
-  document.addEventListener("click", mobJump)
+  btnJump.removeEventListener("click", mobJump)
+  btnJump.addEventListener("click", mobJump)
 }
 
 export function updateDino(delta, speedScale) {
