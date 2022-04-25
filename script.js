@@ -17,6 +17,7 @@ const startScreen2Elem = document.querySelector("[data-start-screen2]")
 const endScreenElem = document.querySelector("[data-end-screen]")
 
 
+document.addEventListener("keydown", handleStart, { once: true })
 document.addEventListener("click", handleStart, { once: true })
 
 
