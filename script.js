@@ -109,6 +109,7 @@ function handleLose() {
 
   setTimeout(() => {
     document.addEventListener("keydown", handleStart, { once: true })
+    document.addEventListener("click", handleStart, { once: true })
    
     endScreenElem.classList.remove("hide")
     endScreen.textContent ="GAME OVER"
