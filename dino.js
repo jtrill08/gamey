@@ -22,8 +22,8 @@ export function setupDino() {
   currentFrameTime = 0
   yVelocity = 0
   setCustomProperty(dinoElem, "--bottom", 0)
-  btnJump.removeEventListener("click", onJump)
-  btnJump.addEventListener("click", mobJump)
+  document.removeEventListener("click", mobJump)
+  document.addEventListener("click", mobJump)
 }
 
 export function updateDino(delta, speedScale) {
@@ -66,12 +66,7 @@ function handleJump(delta) {
   yVelocity -= GRAVITY * delta
 }
 
-function onJump(e) {
-  if (e.code !== "Space" || isJumping) return
 
-  yVelocity = JUMP_SPEED
-  isJumping = true
-}
   function mobJump(btnJump){
     if (btnJump == "click" || isJumping) return
   
